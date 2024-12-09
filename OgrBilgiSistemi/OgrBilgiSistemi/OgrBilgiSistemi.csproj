@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E35EE24A-463C-476E-9076-212D4F4D6529}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OgrBilgiSistemi</RootNamespace>
+    <AssemblyName>OgrBilgiSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AkademisyenEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenEkrani.Designer.cs">
+      <DependentUpon>AkademisyenEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AkademisyenGrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenGrs.Designer.cs">
+      <DependentUpon>AkademisyenGrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersGörme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersGörme.Designer.cs">
+      <DependentUpon>DersGörme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersKyt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersKyt.Designer.cs">
+      <DependentUpon>DersKyt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DvzGirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DvzGirme.Designer.cs">
+      <DependentUpon>DvzGirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DvzGör.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DvzGör.Designer.cs">
+      <DependentUpon>DvzGör.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrsBilgiGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrsBilgiGuncelleme.Designer.cs">
+      <DependentUpon>GrsBilgiGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KytliOgrler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KytliOgrler.Designer.cs">
+      <DependentUpon>KytliOgrler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KytSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KytSilme.Designer.cs">
+      <DependentUpon>KytSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotGirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotGirme.Designer.cs">
+      <DependentUpon>NotGirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrEkrani.Designer.cs">
+      <DependentUpon>OgrEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrGirisi.Designer.cs">
+      <DependentUpon>OgrGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrKayit.Designer.cs">
+      <DependentUpon>OgrKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SilinenOgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SilinenOgr.Designer.cs">
+      <DependentUpon>SilinenOgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransGor.Designer.cs">
+      <DependentUpon>TransGor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AkademisyenEkrani.resx">
+      <DependentUpon>AkademisyenEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenGrs.resx">
+      <DependentUpon>AkademisyenGrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersGörme.resx">
+      <DependentUpon>DersGörme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersKyt.resx">
+      <DependentUpon>DersKyt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DvzGirme.resx">
+      <DependentUpon>DvzGirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DvzGör.resx">
+      <DependentUpon>DvzGör.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrsBilgiGuncelleme.resx">
+      <DependentUpon>GrsBilgiGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KytliOgrler.resx">
+      <DependentUpon>KytliOgrler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KytSilme.resx">
+      <DependentUpon>KytSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotGirme.resx">
+      <DependentUpon>NotGirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrEkrani.resx">
+      <DependentUpon>OgrEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrGirisi.resx">
+      <DependentUpon>OgrGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrKayit.resx">
+      <DependentUpon>OgrKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SilinenOgr.resx">
+      <DependentUpon>SilinenOgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransGor.resx">
+      <DependentUpon>TransGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
